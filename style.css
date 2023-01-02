@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+}
+.frem{
+    position: relative;
+    width: 250px;
+    height:250px;
+    background: black;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frem .rotate{
+    position: absolute;
+
+    width: 400px;
+    height: 240px;
+
+    background: linear-gradient(to right, #cdff03, #d908c8fc, rgb(244, 90, 7));
+
+    animation: rotate 5s linear infinite;
+}
+.frem .cant{
+    width: 240px;
+    height: 240px;
+    background: black;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frem .area{
+    position: relative;
+
+    width: 220px;
+    height: 220px;
+
+    border: 2px solid #ff8400;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frem img{
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes rotate {
+    100% 
+    {
+        transform: rotate(-360deg);
+    }
+}
